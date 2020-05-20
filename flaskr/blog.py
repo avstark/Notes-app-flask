@@ -58,7 +58,8 @@ def create():
 				(title, body, g.user['id'])
 				)
 			db.commit()
-			return redirect(url_for('blog.index')) 
+			return redirect(url_for('blog.index'))
+			# return render_template('blog/index.html')
 
 		flash(error)
 
